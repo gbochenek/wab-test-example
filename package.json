@@ -1,0 +1,29 @@
+{
+  "name": "wab-test-example",
+  "version": "1.0.0",
+  "description": "Web App Builder Widget Wrapped with Tests",
+  "scripts": {},
+  "keywords": [
+    "esri",
+    "wab",
+    "webappbuilder",
+    "unittesting"
+  ],
+  "license": "Apache 2.0",
+  "author": "George Bochenek <gbochenek@esri.com>",
+  "repository": "https://www.github.com/gbochenek/wab-test-example",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-simple-amd": "^0.3.0",
+    "babel-preset-es2015-without-strict": "0.0.4",
+    "babel-preset-stage-0": "^6.24.1",
+    "esri-wab-build": "^1.0.0",
+    "grunt": "^1.0.2",
+    "grunt-babel": "^7.0.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.1.0",
+    "grunt-sync": "^0.7.0"
+  }
+}
