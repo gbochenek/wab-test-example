@@ -8,7 +8,7 @@ The widget is a seperately wrapped JSAPI widget written with unit tests for test
 
 Wrapping JSAPI widgets within the Web App Builder framework is a powerful way to increase your widget's portability and reduce complexity. The code within widgets/GoToDevSummit/Widget is minimal and only serves to pass Web App Builder events and properties on to the widget itself (which is located in widgets/GoToDevSummit/GoToDevSummit).
 
-## Unit Tests and Test Drive Development
+## Unit Tests and Test Driven Development
 
 The number one rule for writing good unit tests is to avoid testing other people's code.  Doing so will keep your tests easy to write. If tests aren't easy to write, they will nont get written.
 
