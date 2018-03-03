@@ -9,7 +9,7 @@
     "webappbuilder",
     "unittesting"
   ],
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "author": "George Bochenek <gbochenek@esri.com>",
   "repository": "https://www.github.com/gbochenek/wab-test-example",
   "devDependencies": {
