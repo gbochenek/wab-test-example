@@ -10,7 +10,7 @@ function(GoToDevSummit){
         }
     };
     const palmSpringsY = 33.82;
-    const palmSpringsX = 116.54;
+    const palmSpringsX = -116.54;
 
     describe('GoToDevSummit', () => {
         beforeEach(() => {
@@ -27,8 +27,8 @@ function(GoToDevSummit){
             // The first argument of goTo is an x,y target
             const goToTarget = spy.args[0][0];
 
-            expect(goToTarget[0]).toBeCloseTo(palmSpringsX,"goTo used the wrong X coordinate!");
-            expect(goToTarget[1]).toBeCloseTo(palmSpringsY,"goTo used the wrong Y coordinate!");
+            expect(goToTarget[0]).toEqual(palmSpringsX,"goTo used the wrong X coordinate!");
+            expect(goToTarget[1]).toEqual(palmSpringsY,"goTo used the wrong Y coordinate!");
 
         });
     });
