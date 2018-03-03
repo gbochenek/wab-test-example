@@ -27,4 +27,5 @@ For steps on syncing this application with your Web App Builder for Developers i
 
 ## Technology Choices
 
-This application was writting using Karma (https://karma-runner.github.io/2.0/index.html) as a test runner, Jasmine (https://jasmine.github.io/) as an assertion language, and the Grunt task runner (https://gruntjs.com/getting-started) to pull it all together. However, the principals applied are not technology specific and this application can be modified to use your technology of choice.
+
+This application was writting using Karma(https://karma-runner.github.io/2.0/index.html) as a test runner, Jasmine (https://jasmine.github.io/) as an assertion language, and the Grunt task runner (https://gruntjs.com/getting-started) to pull it all together. However, the principals applied are not technology specific and this application can be modified to use your technology of choice.
