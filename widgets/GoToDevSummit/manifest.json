@@ -1,0 +1,24 @@
+{
+  "name": "GoToDevSummit",
+  "2D": false,
+  "3D": true,
+  "platform": "HTML3D",
+  "version": "0.0.1",
+  "wabVersion": "2.7",
+  "author": "George Bochenek <gbochenek@esri.com>",
+  "description": "Let&#39;s go to Dev Summit!",
+  "copyright": "",
+  "license": "Apache 2.0",
+  "properties": {
+    "inPanel": true,
+    "hasLocale": false,
+    "hasStyle": false,
+    "hasConfig": true,
+    "hasUIFile": true,
+    "hasSettingPage": false,
+    "hasSettingUIFile": false,
+    "hasSettingLocale": false,
+    "hasSettingStyle": false,
+    "IsController": false
+  }
+}
