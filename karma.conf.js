@@ -4,7 +4,7 @@ module.exports = function(config) {
       // base path, that will be used to resolve files and exclude
       basePath: '',
   
-      frameworks: ['jasmine', 'dojo'],
+      frameworks: ['jasmine', 'dojo', 'sinon'],
   
       // list of files / patterns to load in the browser
       files: [

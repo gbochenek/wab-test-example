@@ -18,9 +18,10 @@ export default declare([BaseWidget], {
 
     this.mainWidget = new GoToDevSummit({
       config: this.config,
-      map: this.map
+      map: this.map,
+      sceneView: this.sceneView
     },this.widgetContainer);
-    
+
     console.log('GoToDevSummit::postCreate');
   }
   // startup() {
