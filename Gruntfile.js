@@ -5,7 +5,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-babel');
+    grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-sass');
+
     var appDir = 'C:/arcgis-web-appbuilder-2.7/WebAppBuilderForArcGIS/server/apps/4';
     var stemappDir = 'C:/arcgis-web-appbuilder-2.7/WebAppBuilderForArcGIS/client/stemapp3d';
     grunt.initConfig({
@@ -83,6 +85,28 @@ module.exports = function (grunt) {
             }
         },
         clean: { 'dist': { 'src': 'dist/**' } },
+        karma: {
+            options: {
+              // get defaults from karma config
+              configFile: 'karma.conf.js',
+              // run all tests once then exit
+              singleRun: true,
+              // only show error messages
+              logLevel: 'INFO',
+            },
+            unit: {
+                options:{
+                  captureTimeout:30000,
+                  reporters : ['progress','junit'],
+                  junitReporter: {
+                    outputDir: 'test-reports', // results will be saved as $outputDir/$browserName.xml 
+                    outputFile: 'test-results', // if included, results will be saved as $outputDir/$browserName/$outputFile 
+                    suite: '', // suite will become the package name attribute in xml testsuite element 
+                    useBrowserName: true // add browser name to report and classes names 
+                  }
+                }
+            }
+          },
         sass: {
             dist: {
                 options: { sourceMap: true },
@@ -96,5 +120,7 @@ module.exports = function (grunt) {
             }
         }
     });
+
     grunt.registerTask('default', ['watch']);
+    grunt.registerTask('test', ['karma']);
 };
