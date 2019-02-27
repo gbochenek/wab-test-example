@@ -2,7 +2,9 @@
   "name": "wab-test-example",
   "version": "1.0.1",
   "description": "Web App Builder Widget Wrapped with Tests",
-  "scripts": {},
+  "scripts": {
+    "test": "karma start"
+  },
   "keywords": [
     "esri",
     "wab",
